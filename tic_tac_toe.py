@@ -56,6 +56,14 @@ while (gameNotOver):
             gameNotOver = False
             print("Bravo ! le joueur", (nbToursDeJeu+1)%2+1, "a gagne !")
 
-    nbToursDeJeu = nbToursDeJeu + 1
+    ##### PARTIE 4 #####
+
+    # on verifie si le nombre de tour est egal a neuf (nombre de cases dans la grille)
+    # si oui, le jeu est fini, si non, on passe au tour suivant en incrementant la 
+    # variable nbToursDeJeu
+    if (nbToursDeJeu == 9):
+        gameNotOver = False
+    else:
+        nbToursDeJeu = nbToursDeJeu + 1
 
 
