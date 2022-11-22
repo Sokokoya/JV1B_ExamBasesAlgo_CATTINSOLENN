@@ -74,3 +74,14 @@ while (gameNotOver):
         nbToursDeJeu = nbToursDeJeu + 1
 
 
+##### PARTIE 6 #####
+
+"""Pour programmer un jeu de Puissance 4 il faudra :
+    - Changer la taille de la grille pour une grille 7x6
+    - Changer la condition de victoire du jeu : il faut que 4 jetons de la meme couleur soient consecutifs
+    - Peut etre utiliser des couleurs
+    - la partie n'est plus finie lorsque 9 tours ont passé, mais lorsque 42 tours (7*6 tours) ont été joués
+Les regles restent sinon globalement les memes :
+    - Chaque joueur pose un pion a son tour
+    - Lorsque 4 sont alignés, en ligne, colonne ou diagonale, le jeu s'arrete
+"""
