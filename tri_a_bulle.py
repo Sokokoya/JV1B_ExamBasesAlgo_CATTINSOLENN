@@ -25,6 +25,8 @@ for i in range(0, len(myTable)-1):
         myTable[i] = myTable[i+1]
         myTable[i+1] = variableTemporaire
 
+
+
 ##### PARTIE 3 #####
 
 myTable = [8, 15, 37, 1, 12]
@@ -43,3 +45,16 @@ for i in range(0, len(myTable)):
 
 # on ecrit a l'ecran le tableau bien trie
 print(myTable)
+
+
+
+##### PARTIE 4 #####
+
+"""Le tri a bulle est lent car on y retrouve deux boucles pour imbriquées
+dans ces boucles on a en plus une verification de condition ce qui a egalement un cout temporel
+non negligeable sur des tableaux de taille tres grande
+L'ordre de grandeur du temps necessaire a son execution est de n², n etant le nombre de tours de tableau
+(donc la taille du tableau)"""
+
+
+
