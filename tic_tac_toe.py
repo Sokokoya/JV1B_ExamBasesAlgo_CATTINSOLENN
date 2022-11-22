@@ -36,24 +36,28 @@ while (gameNotOver):
 
     ##### PARTIE 3 #####
 
-    # on verifie si un joueur n'a pas gagné en diagonale
+    # on verifie si un joueur a gagné en diagonale
     # si c'est le cas, le jeu est fini et on affiche un message de victoire
-    if (((grilleDeJeu[0][0] == grilleDeJeu[1][1]) and (grilleDeJeu[0][0] == grilleDeJeu[2][2]))
-    or ((grilleDeJeu[0][2] == grilleDeJeu[1][1]) and (grilleDeJeu[0][2] == grilleDeJeu [0][2]))):
+    if ((grilleDeJeu[0][0] == grilleDeJeu[1][1]) and (grilleDeJeu[0][0] == grilleDeJeu[2][2])):
         gameNotOver = False
         print("Bravo ! le joueur", (nbToursDeJeu+1)%2+1, "a gagne !")
 
-    # on verifie si un joueur n'a pas gagné en ligne
+    elif ((grilleDeJeu[0][2] == grilleDeJeu[1][1]) and (grilleDeJeu[0][2] == grilleDeJeu [2][0])):
+        gameNotOver = False
+        print("Bravo ! le joueur", (nbToursDeJeu+1)%2+1, "a gagne !")
+
+
+    # on verifie si un joueur a gagné en ligne
     # si c'est le cas, le jeu est fini et on affiche un message de victoire
-    for i in range(0, 2):
+    for i in range(0, 3):
         # verification sur les lignes verticales
-        if ((grilleDeJeu[i][i] == grilleDeJeu[i+1][i]) and (grilleDeJeu[i][i] == grilleDeJeu[i+2][i])):
+        if ((grilleDeJeu[0][i] == grilleDeJeu[1][i]) and (grilleDeJeu[i][i] == grilleDeJeu[2][i])):
             gameNotOver = False
             print("Bravo ! le joueur", (nbToursDeJeu+1)%2+1, "a gagne !")
             break
 
         # verification sur les lignes horizontales
-        elif ((grilleDeJeu[i][i] == grilleDeJeu[i][i+1]) and  (grilleDeJeu[i][i] == grilleDeJeu[i][i+2])):
+        elif ((grilleDeJeu[i][0] == grilleDeJeu[i][1]) and (grilleDeJeu[i][i] == grilleDeJeu[i][2])):
             gameNotOver = False
             print("Bravo ! le joueur", (nbToursDeJeu+1)%2+1, "a gagne !")
             break
