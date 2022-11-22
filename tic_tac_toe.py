@@ -1,7 +1,7 @@
 ##### PARTIE 1 #####
 
 # on cree un tableau de trois cases, qui contiennent toutes un tableau de trois cases, 
-# initialisées avec les chaines de caractere correspondant aux indices des cases
+# toutes initialisées avec une chaine de caractere correspondant a leur indice
 grilleDeJeu = [["0","1","2"], ["3","4","5"], ["6","7","8"]]
 
 # on affiche nos tableaux imbriques sous forme de grille

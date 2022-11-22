@@ -2,7 +2,7 @@
 
 myTable = [8, 15, 37, 1, 12]
 
-# on utilise une variable temporaire pour echanger la premiere et la deuxieme valeurs du tableau
+# on utilise une variable temporaire pour echanger la premiere et la deuxieme valeur du tableau
 variableTemporaire = 0
 
 variableTemporaire = myTable[0]
@@ -34,7 +34,7 @@ print(myTable)
 
 for i in range(0, len(myTable)):
     # on ne compare les valeurs que dans ce qui n'a pas ete change
-    # on parcours donc le tableau de 0 a la taille du tableau auquel on a retire les valeurs 
+    # on parcourt donc le tableau de 0 a la taille du tableau auquel on a retire les valeurs 
     # deja triees (donc i)
     for j in range(0, len(myTable)-(1+i)):
 
@@ -50,9 +50,9 @@ print(myTable)
 
 ##### PARTIE 4 #####
 
-"""Le tri a bulle est lent car on y retrouve deux boucles pour imbriquées
+"""Le tri a bulle est lent car on y retrouve deux boucles for imbriquées
 dans ces boucles on a en plus une verification de condition ce qui a egalement un cout temporel
-non negligeable sur des tableaux de taille tres grande
+non negligeable sur des tableaux, surtout s'ils sont de taille tres grande
 L'ordre de grandeur du temps necessaire a son execution est de n², n etant le nombre de tours de tableau
 (donc la taille du tableau)"""
 
